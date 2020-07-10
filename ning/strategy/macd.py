@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
-from auxpackage.analysis_package import ap
+from auxpackage.tookit.analysis_package import ap
 from pandas.plotting import register_matplotlib_converters
-from auxpackage import quant_package as qp
+from auxpackage.tookit import quant_package as qp
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -182,8 +182,8 @@ class MACD:
 
 
 if __name__ == '__main__':
-    # path_r_ = r'../../../data/index/hist_sz.csv'
-    path_r_ = r'../../../data/aud&nzd/HISTDATA_COM_XLSX_AUDNZD_M12019/AUDNZD_M1_2019.xlsx'
+    path_r_ = r'../../../data/index/hist_sz.csv'
+    # path_r_ = r'../../../data/aud&nzd/HISTDATA_COM_XLSX_AUDNZD_M12019/AUDNZD_M1_2019.xlsx'
 
     m = MACD(path_r=path_r_)
     m.run()
